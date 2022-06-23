@@ -1,0 +1,19 @@
+{
+    "name": "desafio-dia-2-es6",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "babel": "npx babel -d dist/ src --config-file ./babel.config.json",
+        "brow": "browserify dist/main.js -o dist/bundle.js",
+        "compilar": "npm run babel && npm run brow"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.17.10",
+        "@babel/core": "^7.17.10",
+        "@babel/preset-env": "^7.17.10"
+    }
+}
